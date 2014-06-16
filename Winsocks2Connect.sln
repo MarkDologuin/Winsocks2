@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Winsocks2Client", "Win32Project1\Win32Project1.vcxproj", "{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Debug|ARM.ActiveCfg = Debug|Win32
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Debug|Win32.Build.0 = Debug|Win32
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Debug|x64.ActiveCfg = Debug|Win32
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Release|ARM.ActiveCfg = Release|Win32
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Release|Win32.ActiveCfg = Release|Win32
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Release|Win32.Build.0 = Release|Win32
+		{7C968A22-A088-4BDD-ABC6-D7D78F2A6132}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

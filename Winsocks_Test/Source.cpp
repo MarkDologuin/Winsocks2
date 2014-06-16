@@ -37,9 +37,13 @@ int main(int argc, char *argv[]) {
 	//client
 	#define DEFAULT_PORT "27015"
 
-	// Resolve the server address and port
+	std::string temp;
 
-	iResult = getaddrinfo(argv[1], DEFAULT_PORT, &hints, &result);
+	std::cout << "WHAT IS THE IP ADDRESS";
+	std::cin >> temp;
+
+	// Resolve the server address and port
+	iResult = getaddrinfo(temp.c_str(), DEFAULT_PORT, &hints, &result);
 
 	if (iResult != 0) {
 		printf("getaddrinfo failed: %d\n", iResult);

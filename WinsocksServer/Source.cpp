@@ -7,13 +7,19 @@
 #include <ws2tcpip.h>
 #include <iphlpapi.h>
 #include <stdio.h>
+#include <iostream>
+#include <string>
 
 #pragma comment(lib, "Ws2_32.lib")
 
 int main() {
 	WSADATA wsaData;
 	int iResult;
-
+	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+	if (iResult != 0) {
+		printf("WSAStartup failed: %d\n", iResult);
+		return 1;
+	}
 
 	#define DEFAULT_PORT "27015"
 
@@ -25,8 +31,10 @@ int main() {
 	hints.ai_protocol = IPPROTO_TCP;
 	hints.ai_flags = AI_PASSIVE;
 
+
+	std::string temp1 = "0.0.0.0";
 	// Resolve the local address and port to be used by the server
-	iResult = getaddrinfo(NULL, DEFAULT_PORT, &hints, &result);
+	iResult = getaddrinfo(temp1.c_str(), DEFAULT_PORT, &hints, &result);
 	if (iResult != 0) {
 		printf("getaddrinfo failed: %d\n", iResult);
 		WSACleanup();
@@ -107,5 +115,8 @@ int main() {
 
 	} while (iResult > 0);
 
+
+std::string bob;
+std::cin >> bob;
 	return 0;
 }
